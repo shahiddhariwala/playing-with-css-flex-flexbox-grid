@@ -16,6 +16,7 @@ html
 {
     padding: 25px;
     display: flex;
+    flex-wrap: no-wrap;
 }
 .container__box
 {
@@ -23,8 +24,14 @@ html
     margin: 10px;
     width: 100%;
     padding: 15px;
+    display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid white;
+    border: 2px solid white;
+    box-shadow: 0 10px 80px gray;
     border-radius: 200px;
+    background-color: #A6FFCB;
+    
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
