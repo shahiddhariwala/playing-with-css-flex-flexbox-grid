@@ -1,3 +1,8 @@
+:root
+{
+    --main-radius: 10px;
+    --main-padding: 10px;
+}
 *
 {
     margin: 0;
@@ -10,6 +15,7 @@ html{
 
 .container
 {
+    text-align: center;
     font-size: xx-large;
     text-shadow: black;
     display: grid;
@@ -24,36 +30,50 @@ html{
 nav{
     background-color: rgb(41, 52, 211);
     grid-area: nav;
+    padding-top: var(--main-padding);
+    border-radius: var(--main-radius);
 }
 main{
     background-color: rgb(7, 78, 56);
     grid-area: main;
+    padding-top: var(--main-padding);
+    border-radius: var(--main-radius);
 }
 
 
 #sidebar{
     background-color: rgb(195, 17, 211);
     grid-area: sidebar;
+    padding-top: var(--main-padding);
+    border-radius: var(--main-radius);
 }
 
 
 #content1{
     background-color: rgb(0, 83, 139);
     grid-area: content1;
+    padding-top: var(--main-padding);
+    border-radius: var(--main-radius);
 }
 
 #content2{
     background-color: rgb(75, 12, 134);
     grid-area: content2;
+    padding-top: var(--main-padding);
+    border-radius: var(--main-radius);
 }
 #content3{
     background-color: rgb(83, 4, 66);
     grid-area: content3;
+    padding-top: var(--main-padding);
+    border-radius: var(--main-radius);
 }
 footer
 {
     grid-area: footer;
     background: linear-gradient(to right,rgb(255, 0, 0),rgba(255, 81, 81, 0.562));
+    padding-top: var(--main-padding);
+    border-radius: var(--main-radius);
 }
 
 /* Media queries for responsive  */
