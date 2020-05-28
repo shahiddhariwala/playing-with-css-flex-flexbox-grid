@@ -1,0 +1,59 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+   color: aliceblue;
+}
+
+.container
+{
+    font-size: xx-large;
+    text-shadow: black;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* fr means flex factor */
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.2fr;
+    grid-template-areas: "nav nav nav nav" "sidebar main main main" "sidebar content1 content2 content3" "sidebar footer footer footer";
+    grid-gap: 5px;
+}
+
+nav{
+    background-color: rgb(41, 52, 211);
+    grid-area: nav;
+}
+main{
+    background-color: rgb(7, 78, 56);
+    grid-area: main;
+}
+
+
+#sidebar{
+    background-color: rgb(195, 17, 211);
+    grid-area: sidebar;
+}
+
+
+#content1{
+    background-color: rgb(0, 83, 139);
+    grid-area: content1;
+}
+
+#content2{
+    background-color: rgb(75, 12, 134);
+    grid-area: content2;
+}
+#content3{
+    background-color: rgb(83, 4, 66);
+    grid-area: content3;
+}
+footer
+{
+    grid-area: footer;
+    background: linear-gradient(to right,rgb(255, 0, 0),rgba(255, 81, 81, 0.562));
+}
+
+/* Media queries for responsive  */
