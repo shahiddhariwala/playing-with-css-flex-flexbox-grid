@@ -87,5 +87,7 @@ footer
         grid-template-columns: 1fr;
         grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 0.4fr;
         grid-template-areas: "nav" "sidebar" "main" "content1" "content2" "content3" "footer";
+        font-weight: 400;
+        font-size: x-large;
     }
 }
